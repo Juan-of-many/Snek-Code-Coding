@@ -1,0 +1,55 @@
+
+This is a text file
+
+HTML comment <!-- -->
+CSS comment  /* */
+
+
+HTML = Hypertext Markup Language
+
+Typing ! then hitting tab or enter pops up the following HTMLt basic skeleton
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is my main title</h1>
+    <p>This is my paragraph</p>
+    <h2>Sub title</h2>
+    <a>This is an attribute that is either a could of words showing on the page to be interacted with, maybe a button, or something that can be linked to or give information such as a link for something else to become a link.</a>
+</body>
+</html>
+
+
+
+How to get a webpage onto the internet?
+type out code somewhere, then type ctrl + o and the page will be shown on the browser offline.
+vs code live server extension uses local host address
+
+Store files in a place where they can be retrieved by anyone = called hosting.
+many people choose to purchase website hosting services so they can rely on someone with better internet service to host their website.
+domain name has to be unique from every other website out there - registered with Domain Name System (DNS) that will keep track of where the files are stored.
+
+many sites are willing to host your web files for a fee (usually monthly subscription)
+sometimes they will also offer to help you register your domain name.
+
+File Transfer Protocol = FTP = connecting to your hosting and sending them your files to publicly host and alter your website. (local to remote global)
+
+Glitch or Github ~~~ free ~~~ you will not have your own domain name, it will have .glitch.me or .github.io at the end. People can still find it online though.
+
+
+
+
+
+
+
+
+in styles.css
+body {
+    background-color: lightblue;
+}
+
+
