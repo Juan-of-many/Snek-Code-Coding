@@ -1,0 +1,58 @@
+.main-para {
+    font-size: 1.5em;
+    line-height: 1.5em;}
+
+main p {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+#active {
+    background-color: white;
+    color: steelblue;
+}
+
+img {
+    width: 80%;
+    display: block;
+    margin: 0 auto  /*margin of 0 refers to top and bottom margin and will automatically place an equal amount of space on the right and left to center it.*/
+}
+
+a {
+    font-size: 1.5em;
+}
+
+a:hover {
+    background-color: white;
+    color: steelblue;
+}
+
+/* * {
+    border: 2px solid blue;
+} */
+/* Blue border commented out, helps visualize the space each element occupies on page */
+
+h1 {
+    text-align: center;
+}
+
+nav, footer {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+
+
+
+
+
+
+

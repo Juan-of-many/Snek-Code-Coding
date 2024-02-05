@@ -1,0 +1,77 @@
+/* title has hover from white to black and centered*/
+
+
+/* small text is white and centered */
+/* --- President Nelson is white and larger and centered */
+
+/* list text is black */
+/* image centered */
+
+
+/* large quote text is white and centered */
+
+
+/* footer black small text centered */
+
+* {background-color: steelblue;}
+
+h1 {
+    text-align: center;
+    color: white;
+
+}
+
+h1:hover {
+    background-color: steelblue;
+    color: black;
+}
+
+main p {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.small_quote {
+    font-size: small;
+}
+
+.small_reference {
+    font-weight: bold;
+    margin: 10px auto;
+}
+
+.black_list {
+    color: black;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+img {
+    width: 15%;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.large_quote {
+    font-size: 2em;
+    margin: 0 auto;
+    padding: 15px;
+    width: 30%
+}
+
+footer {
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+    width: 28%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* 'In css, target ID using #
+In css, target class using .
+ID unique, class reusable.' */
