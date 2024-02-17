@@ -54,3 +54,24 @@ body {
 
 
 It is often considered a good practice if you have a link that takes you away from the current site to have it open in a new window or tab. This can be done with the  target="_blank" attribute.
+
+
+
+CSS Box Model is a box that wraps around every element. It has content, padding, border, and margin.
+Content is where text and images appear.
+Padding is the area around the content.
+Border goes around the padding and content.
+Margin is the area outside the border.
+
+
+
+
+
+
+
+
+
+
+
+
+

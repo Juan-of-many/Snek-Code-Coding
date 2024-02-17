@@ -1,13 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Livvic&display=swap');
+
 #content {
     max-width: 1600px; /* no part of the div with the content label will be wider than 1600 pixels, regardless of how large the monitor is. */
     margin: 0 auto; /*top and bottom margins set to 0 and left and right margins set to auto*/
-}
-
-nav a {
-    text-align: center;
-    color: #563635;
-    text-decoration: none;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -22,16 +18,36 @@ main section {
     text-align: center;
 }
 
+main section image {
+    box-sizing: border-box;
+}
+
 #background {
     height: 725px;
+    background-color: #563635;
 }
 
 body {
     background-color: #5B6057;
+    font-family: Livvic, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0
 }
 
 header {
     background-color: #81F0E5;
+}
+
+nav a {
+    text-align: center;
+    color: #563635;
+    text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -44,33 +60,62 @@ h4 {
 }
 
 .book, .join {
-    color: #81F0E5;
+    color: #5B6057;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #81F0E5;
 }
 
 .book:hover, .join:hover {
-    color: #78C091;
+    color: #563635;
+    background-color: #78C091;
+}
+
+.home-title {
+    font-family: "Finger Paint", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.mountains {
+    padding: 100px 0px; /* first value is up/down, second value is left/right */
+    padding-bottom: 150px; /* this will manually replace the bottom padding value */
+}
+
+.msg {
+    line-height: 1.5em;
+    padding: 35px;
+    background-color: #563635;
 }
 
 .msg h2 {
     color: #78C091;
+    font-family: "Finger Paint", 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .msg p {
     color: #81F0E5;
+    font-size: 0.8em;
+    padding-bottom: 15px;
 }
 
 footer {
     color: #78C091;
+    background-color: #563635;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer a {
-    color: #81F0E5;
+    color: #78C091;
     text-decoration: none; /* removing the underline beneath the link */
 }
 
 footer a:hover {
-    color: #78C091
+    color: #81F0E5
 }
 
 footer p {
@@ -81,9 +126,25 @@ footer p a:hover {
     text-decoration: underline;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #563635;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #hero-img {
