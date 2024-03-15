@@ -1,1 +1,64 @@
+/* # for id */
+/* . for class */
+
+/* for testing */
+/*  border-width: 10px;
+    border-color: black;
+    border-style: solid; */
+    
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #f9ed76;
+    display: grid;
+    grid-template-columns: 150px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-align: center;
+    color: #4d0018;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #4d0018;
+    color: #f976bd;
+}
+
+.dragon_logo_link {
+    justify-self: center;
+    align-self: center;
+}
+
+.dragon_logo {
+    height: 80px;
+    width: 80px;
+}
+/* need to somehow overlap the two images */
+
+/* .dragon_hover {
+    height: 80px;
+    width: 80px;
+} */
+
+
+
+
+
+
+
+
+
+
 
