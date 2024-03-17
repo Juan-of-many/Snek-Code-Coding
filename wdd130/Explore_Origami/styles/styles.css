@@ -28,7 +28,8 @@ nav a {
     text-align: center;
     color: #4d0018;
     text-decoration: none;
-    padding: 35px;
+    padding: 45px;
+    font-size: 1.3em;
 }
 
 nav a:hover {
@@ -36,16 +37,22 @@ nav a:hover {
     color: #f976bd;
 }
 
-.dragon_logo_link {
+#dragon_fancy_interaction {
     justify-self: center;
     align-self: center;
 }
+
+/* .dragon_logo_link {
+    justify-self: center;
+    align-self: center;
+} */
+/* the above is redundant? */
 
 .dragon_logo {
     height: 80px;
     width: 80px;
 }
-/* need to somehow overlap the two images */
+/* need to somehow overlap the two images and only one shows at a time, with one having a lower z orientation and the second having 0 opacity until hovered over. */
 
 /* .dragon_hover {
     height: 80px;
