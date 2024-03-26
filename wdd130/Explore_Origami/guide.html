@@ -7,39 +7,6 @@
     <title>Explore Origami | Home Page</title>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <!-- Above is the connecting piece that allows the html and css to talk about taxes and such -->
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-        showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-        showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("demo");
-        let captionText = document.getElementById("caption");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-        captionText.innerHTML = dots[slideIndex-1].alt;
-        }
-    </script>
-    <!-- Above, javascript is placed in the head -->
 </head>
 <body>
     <div id="content">
@@ -51,8 +18,8 @@
                     src="images/dragon_logo.jpg"
                     alt="Origami Dragon Logo">
                 </a>
-                <!-- <a class="dragon_logo_link" href="index.html">
-                    <img class="dragon_hover"
+                <!-- <a class="dragon_horn_link" href="index.html">
+                    <img class="dragon_horn"
                     src="images/dragon_horn.jpg"
                     alt="Origami Dragon Horn Logo">
                 </a> -->
@@ -154,7 +121,7 @@
                 <!-- Thumbnail images -->
                 <div class="bottom_row">
                     <div class="column">
-                        <img class="large image" src="images/fortune_teller0.jpg" style="width:100%" onclick="currentSlide(1)" alt="image description/step description needed here WIP"> <!-- Apparently these alts act as the text that appears on the overlayed text that is unique to each image. -->
+                        <img class="demo cursor" src="images/fortune_teller0.jpg" style="width:100%" onclick="currentSlide(1)" alt="image description/step description needed here WIP"> <!-- Apparently these alts act as the text that appears on the overlayed text that is unique to each image. -->
                     </div>
                     <div class="column">
                         <img class="demo cursor" src="images/fortune_teller1.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
@@ -204,6 +171,36 @@
                 </div>
 
             </section>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("demo");
+                  let captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace("active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+                </script>
         </main>
         <!-- whitespace attached to the top of the footer -->
         <footer> <!-- The <p></p> around the footer elements including text allows the use of footer p {} in css to have easier access to font and color changes. -->

@@ -1,5 +1,10 @@
 /* # for id */
 /* . for class */
+/* Opinion: Amatic SC doesn't fit this vibe*/
+/* 
+Heading Font: Amatic SC, Helvetica
+Paragraph Font: Merriweather, Helvetica 
+*/
 
 /* for testing */
 /*  border-width: 10px;
@@ -7,69 +12,84 @@
     border-style: solid; */
     
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-    
+
+body {
+  font-family: Merriweather, Helvetica
+}
+
 #content {
-    max-width: 1600px;
-    margin: 0 auto;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 header {
-    background-color: #f9ed76;
-    display: grid;
-    grid-template-columns: 150px auto;
+  background-color: #4d0018;
+  display: grid;
+  grid-template-columns: 150px auto;
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav a {
-    text-align: center;
-    color: #4d0018;
-    text-decoration: none;
-    padding: 45px;
-    font-size: 1.3em;
+  text-align: center;
+  color: #f976bd;
+  text-decoration: none;
+  padding: 45px;
+  font-size: 1.4em;
+  align-self: center;
 }
 
 nav a:hover {
-    background-color: #4d0018;
-    color: #f976bd;
+  background-color: #4d0018;
+  color: #f9ed76;
 }
 
 #dragon_fancy_interaction {
-    justify-self: center;
-    align-self: center;
+  width: 100%;
+  height: 100%;
+  background-color: #aff3fc;
+  align-content: center;
+  text-align: center;
 }
-
-/* .dragon_logo_link {
-    justify-self: center;
-    align-self: center;
-} */
-/* the above is redundant? */
 
 .dragon_logo {
-    height: 80px;
-    width: 80px;
+  height: 110px;
+  width: auto;
 }
 /* need to somehow overlap the two images and only one shows at a time, with one having a lower z orientation and the second having 0 opacity until hovered over. */
+/* 
+.dragon_horn {
+  height: 100px;
+  width: 100px;
+  z-index: 1;
+}
 
-/* .dragon_hover {
-    height: 80px;
-    width: 80px;
+.dragon_horn:hover{
+  opacity: 100%;
 } */
+
+
+.title_of_page {
+  font-family: Amatic SC, Helvetica;
+  width: auto;
+  padding: 2px;
+  margin: 4px 0px;
+  background-color: #f9ed76;
+  color: #4d0018;
+  text-align: center;
+  font-size: 2.5em; 
+}
 
 /* Need to credit the following site for the code help. https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 /* Image slider css  */
-* {
-  box-sizing: border-box;
-}
-
-/* Position the image container (needed to position the left and right arrows) */
 .scroll_slider {
+  box-sizing: border-box; /* padding and border are included in width and height declarations. This then makes same-sized div or other elements easier to make. */
   position: relative;
 }
-
+/* Position the image container (needed to position the left and right arrows) */
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -116,6 +136,7 @@ nav a:hover {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  right: 0;
 }
 
 /* Container for image text */
@@ -125,13 +146,11 @@ nav a:hover {
   padding: 2px 16px;
   color: white;
 }
-
 .bottom_row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* 5 columns side by side at a time */
 .column {
   float: left;
@@ -142,10 +161,87 @@ nav a:hover {
 .demo {
   opacity: 0.6;
 }
-
 .active,
 .demo:hover {
   opacity: 1;
+}
+/* End of complicated image scroller */
+
+.origami_history {
+  border: 2px solid;
+  margin: auto;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #4d0018;
+}
+.davinci_description {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 25px;
+  margin-left: 40px;
+  align-self: center;
+  font-size: 1.1em;  
+  color: #f976bd;
+}
+.davinci {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin: auto 40px;
+  margin-left: 18px;
+  align-self: center;
+}
+
+
+.how_it_all_started, .my_inspiration {
+  padding: 10px 10px;
+  margin: auto 100px;
+  margin-top: 30px;
+  justify-self: center;
+  text-align: center;
+  font-size: 1.2em;
+  color: #0a8ea5;
+}
+
+.how_it_all_started h2 {
+  margin-bottom: -14px;
+  font-family: Amatic SC, Helvetica;
+  font-weight: 900;
+  font-size: 2em;
+}
+.my_inspiration h2 {
+  font-family: Amatic SC, Helvetica;
+  font-weight: 900;
+  font-size: 2em;
+  margin-top: -20px; 
+  margin-bottom: -14px;
+}
+
+
+.hoard {
+  margin-top: 50px;
+  padding-bottom: 5%;
+  background:#4d0018;
+  font-size: 1.1em;
+  align-content: center;
+  text-align: center; /* I don't understand why, but this seems to be the simplest way for me to be able to center an image horizontally(left/right)*/
+  position: relative;
+}
+
+.hoard p {
+  position: absolute;
+  top: 0;
+  background-color: #4d0018;
+  opacity: 0.9; /*Best if only 10% of image shows underneath the text*/
+  text-align: center;
+  margin: auto;
+  padding: 25px;
+  color: #f976bd;
+}
+.hoard img {
+  width: 90%;
+  height: auto;
 }
 
 
@@ -153,6 +249,51 @@ nav a:hover {
 
 
 
+/* Bottom of page */
+#wip_message {
+  background-color: #f9ed76;
+  color: #4d0018;
+  font-family: Merriweather, Helvetica;
+  width: auto;
+  padding: 2px;
+  margin: 2px 0px;
+  margin-top: 90px;
+  text-align: center;
+  border-bottom: 2px solid white;
+} 
+footer {
+  background-color: #4d0018;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  padding: 20px 0;
+  padding-left: 25px;
+}
 
+footer a, footer p {
+  color: #f976bd;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer a:hover{
+  color:#f9ed76
+}
+
+footer p {
+  font-size: 1.4em;
+}
+
+footer p a:hover {
+  text-decoration: underline;
+}
+
+footer img {
+  /* want to make it smaller */
+  /* future me will round the edges */
+  padding-top: 4%;
+  width: 50%;
+  height: auto;
+}
 
 
