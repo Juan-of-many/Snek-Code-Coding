@@ -228,12 +228,12 @@ nav a:hover {
   text-align: center; /* I don't understand why, but this seems to be the simplest way for me to be able to center an image horizontally(left/right)*/
   position: relative;
 }
-
+/*Maybe crop off 50px or so from the top of this image*/
 .hoard p {
   position: absolute;
   top: 0;
   background-color: #4d0018;
-  opacity: 0.9; /*Best if only 10% of image shows underneath the text*/
+  opacity: 0.92; /*Best if a max of 10% of image shows underneath the text*/
   text-align: center;
   margin: auto;
   padding: 25px;
@@ -243,6 +243,19 @@ nav a:hover {
   width: 90%;
   height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
