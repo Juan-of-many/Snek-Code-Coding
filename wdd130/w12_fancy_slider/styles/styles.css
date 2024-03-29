@@ -1,13 +1,12 @@
 body{
-    height:100vh;
+    height: 100vh;
     width: 100vw;
     background-color: black;
     margin: 0rem;
-    /* will need to check what the v means and what the rem means */
     overflow: hidden;
 }
 
-#image_slider_track {
+#image-track {
     display: flex;
     gap: 4vmin;
     position: absolute;
@@ -17,11 +16,13 @@ body{
     user-select: none; /* Prevent image highlighting */
 }
 
-#image_slider_track .image {
+#image-track > .image {
     width: 40vmin;
     height: 56vmin;
-    object-fit: cover; /* not sure what this does, will look into it*/
+    object-fit: cover; 
     object-position: 100% center;
 }
 
+/* not sure what this does, will look into it*/
+/* will need to check what the v means and what the rem means */
 /* credit to Hyperplexed for the guide */
