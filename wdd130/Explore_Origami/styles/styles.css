@@ -76,7 +76,7 @@ nav a:hover {
   font-family: Amatic SC, Helvetica;
   width: auto;
   padding: 2px;
-  margin: 4px 0px;
+  /* margin: 4px 0px; */
   background-color: #f9ed76;
   color: #4d0018;
   text-align: center;
@@ -84,7 +84,7 @@ nav a:hover {
 }
 
 /* Need to credit the following site for the code help. https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
-/* Image slider css  */
+/* Image slider css */
 .scroll_slider {
   box-sizing: border-box; /* padding and border are included in width and height declarations. This then makes same-sized div or other elements easier to make. */
   position: relative;
@@ -93,6 +93,8 @@ nav a:hover {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width: 60%;
+  padding: 0px 20%;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
@@ -108,8 +110,8 @@ nav a:hover {
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
-  color: white;
+  margin-top: -40%;
+  color: #0a8ea5;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -131,8 +133,8 @@ nav a:hover {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
+  color: #0a8ea5;
+  font-size: 16px;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -142,22 +144,23 @@ nav a:hover {
 /* Container for image text */
 .caption-container {
   text-align: center;
-  background-color: #222;
+  background-color: #4d0018;
+  margin-top: -4px;
   padding: 2px 16px;
-  color: white;
+  color: #f976bd;
 }
 .bottom_row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* 5 columns side by side at a time */
+/* 4 columns side by side at a time */
 .column {
   float: left;
-  width: 20%;
+  width: 25%;
 }
 
-/* Add a transparency effect for thumnbail images */
+/* Add a transparency effect for thumbnail images */
 .demo {
   opacity: 0.6;
 }
@@ -168,7 +171,6 @@ nav a:hover {
 /* End of complicated image scroller */
 
 .origami_history {
-  border: 2px solid;
   margin: auto;
   margin-top: 80px;
   display: grid;
@@ -188,13 +190,12 @@ nav a:hover {
 .davinci {
   grid-column: 3/4;
   grid-row: 1/2;
-  margin: auto 40px;
-  margin-left: 18px;
-  align-self: center;
+  margin: auto 15px;
+  margin-right: 35px;
 }
 
 
-.how_it_all_started, .my_inspiration {
+.how_it_all_started, .my_inspiration, .why {
   padding: 10px 10px;
   margin: auto 100px;
   margin-top: 30px;
@@ -217,7 +218,6 @@ nav a:hover {
   margin-top: -20px; 
   margin-bottom: -14px;
 }
-
 
 .hoard {
   margin-top: 50px;
@@ -252,9 +252,23 @@ nav a:hover {
 
 
 
+/* Subpage 1, or Page 2: Fortune-Teller Guide */
+.description {
+  background-color: #4d0018;
+  color: #f976bd;
 
-
-
+  font-family: Merriweather, Helvetica;
+  width: auto;
+  padding: 6px 18px;
+  margin-top: 90px;
+  text-align: center;
+}
+#why h2 {
+  font-family: Amatic SC, Helvetica;
+  font-weight: 900;
+  font-size: 2em;
+  margin-bottom: -14px;
+}
 
 
 
@@ -269,10 +283,10 @@ nav a:hover {
   font-family: Merriweather, Helvetica;
   width: auto;
   padding: 2px;
-  margin: 2px 0px;
+  /* margin: 2px 0px; */
   margin-top: 90px;
   text-align: center;
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 } 
 footer {
   background-color: #4d0018;
@@ -310,3 +324,72 @@ footer img {
 }
 
 
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .home-grid {
+      display: block;
+      height: auto;
+  }
+  nav, footer {
+      flex-direction: column;
+      font-size: 0.75em;
+      display: flex;
+      padding: 10px 0;
+  }
+  nav a {
+      display: block;
+      padding: 6px;
+  }
+  .title_of_page {
+      font-size: 25px;
+      font-size: 2em;
+  }
+  .how_it_all_started, .my_inspiration, .why {
+    width: 87%;
+    justify-self: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+  }
+  .origami_history {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.4fr 1fr 8%;
+  }
+  /*At certain page widths, the grid template gets messy. The only way I can think to fix this would be to change it from a grid, but I do not wish to.*/
+  .davinci_description {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 5% auto;
+    padding: 0px 5%;
+  }
+  .davinci { 
+      grid-column: 1/2;
+      grid-row: 2/3;
+      width: 60%;
+      margin: auto auto;
+  }
+  .hoard img {
+    position: unset;
+  }
+  .hoard p {
+    padding: 15px;
+    font-size: 0.85em;
+    position: unset;
+  }
+  .prev, .next {  
+    margin: clamp(-450px, -35%, -150px) auto;
+  }
+  /* A clamp takes three values; the minimum, preferred, and maximum values, in that order. */
+  .numbertext{
+    font-size: 10px;
+  }
+  footer img {
+    padding-top: 0px;
+    width: 40%
+  }
+}
