@@ -249,9 +249,9 @@ nav a:hover {
   position: absolute;
   top: 0;
   background-color: #4d0018;
-  opacity: 0.90; /*Best max opacity is 16% so image starts to show beneath the text while text is still readable.*/
+  opacity: 0.86; /*Max opacity is 16% so image starts to show beneath the text while text is still readable.*/
   text-align: center;
-  margin: auto;
+  margin: auto 5%;
   padding: 25px;
   color: #f976bd;
 }
@@ -271,6 +271,7 @@ nav a:hover {
   padding: 6px 18px;
   margin-top: 90px;
   text-align: center;
+  
 }
 .why h2 {
   font-family: Amatic SC, Helvetica;
